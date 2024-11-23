@@ -1,0 +1,14 @@
+name: Query GitHub Runners
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list-runners:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubuntu-22.04, ubuntu-20.04, windows-latest, windows-2022, macos-latest, macos-13, macos-12]
+    steps:
+      - name: Display runner OS
+        run: echo "Current OS: ${{ matrix.os }}"
