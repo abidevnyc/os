@@ -1,7 +1,8 @@
 name: Query GitHub Runners
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   list-runners:
