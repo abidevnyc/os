@@ -19,4 +19,5 @@ jobs:
           - macos-12
     steps:
       - name: Display runner OS
-        run: echo "Current OS: ${{ matrix.os }}"
+        run: |
+          echo "Current OS: ${{ matrix.os }}"
