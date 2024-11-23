@@ -16,8 +16,8 @@ jobs:
           - windows-latest
           - windows-2022
           - macos-latest
-          - macos-13
-          - macos-12
+          - macos-15
+          - macos-14
     steps:
       - name: Display runner OS
         run: |
